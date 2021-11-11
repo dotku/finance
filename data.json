@@ -1,38 +1,37 @@
-[
-  {
-    title: "Chime",
-    url: "https://chime.com/r/weijinglin"
-  }, 
-  {
-    title: "Acorns",
-    url: "https://share.acorns.com/weijingjaylin?advocate.partner_share_id=553338990949201082"
-  },
-  {
-    title: "Robinhood",
-    url: "https://join.robinhood.com/weijinl2"
-  },
-  {
-    title: "BlockFi",
-    url: "https://blockfi.com/?ref=a0edff46"
-  },
-  {
-    title: "Kryptex",
-    url: "https://www.kryptex.org/?ref=db93f807"
-  },
-  {
-    title: "Flexpool",
-    url: "https://www.flexpool.io/"
-  },
-  {
-    title: "Earncheese",
-    url: "https://link.earncheese.com/valF/9123ede8"
-  },
-  {
-    title: "Yotta",
-    url: "https://members.withyotta.com/register?code=WEIJING3"
-  },
-  {
-    title: "PayPal",
-    url: "https://py.pl/1yGy15"
-  }
+[{
+		"title": "Chime",
+		"url": "https://chime.com/r/weijinglin"
+	},
+	{
+		"title": "Acorns",
+		"url": "https://share.acorns.com/weijingjaylin?advocate.partner_share_id=553338990949201082"
+	},
+	{
+		"title": "Robinhood",
+		"url": "https://join.robinhood.com/weijinl2"
+	},
+	{
+		"title": "BlockFi",
+		"url": "https://blockfi.com/?ref=a0edff46"
+	},
+	{
+		"title": "Kryptex",
+		"url": "https://www.kryptex.org/?ref=db93f807"
+	},
+	{
+		"title": "Flexpool",
+		"url": "https://www.flexpool.io/"
+	},
+	{
+		"title": "Earncheese",
+		"url": "https://link.earncheese.com/valF/9123ede8"
+	},
+	{
+		"title": "Yotta",
+		"url": "https://members.withyotta.com/register?code=WEIJING3"
+	},
+	{
+		"title": "PayPal",
+		"url": "https://py.pl/1yGy15"
+	}
 ]
