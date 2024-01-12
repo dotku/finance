@@ -103,7 +103,7 @@
         yearlyData.push({ year: i, balance: balance.toFixed(2) });
       }
 
-      document.getElementById('result').innerText = `Total Amount: ${compoundInterest.toFixed(2)}`;
+      document.getElementById('result').innerText = `Total Amount: ${yearlyData[years - 1].balance}`;
 
       displayYearlyData(yearlyData);
     }
