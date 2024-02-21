@@ -1,3 +1,3 @@
 # Monitor
 
-Create a monitor tool that able to track the payment.
+Create a monitor tool that able to track the financial activities.
