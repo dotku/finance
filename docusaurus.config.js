@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "DotKu Finance",
+  title: "DinoFinance",
   tagline: "Helpful financial tips",
   favicon: "img/favicon.ico",
 
@@ -66,9 +66,9 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "DotKu Finance",
+        title: "DinoFinance",
         logo: {
-          alt: "DotKu Finance Logo",
+          alt: "DinoFinance Logo",
           src: "img/logo.svg",
         },
         items: [
@@ -130,7 +130,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DotKu Finance, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} DinoFinance, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
