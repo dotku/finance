@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compound Interest Calculator with Annual Deposit</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 50px;
+    }
+
+    input {
+      width: 200px;
+      height: 30px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      font-size: 18px;
+      margin: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="mt-3">Compound Interest Calculator with Annual Deposit</h2>
+    
+    <div class="form-group">
+      <label for="principal">Principal Amount:</label>
+      <input type="number" id="principal" class="form-control" placeholder="Enter principal amount" value="0" required>
+    </div>
+
+    <div class="form-group">
+      <label for="rate">Annual Interest Rate (%):</label>
+      <input type="number" id="rate" class="form-control" placeholder="Enter annual interest rate" value="10" required>
+    </div>
+
+    <div class="form-group">
+      <label for="years">Number of Years:</label>
+      <input type="number" id="years" class="form-control" placeholder="Enter number of years" value="30" required>
+    </div>
+
+    <div class="form-group">
+      <label for="deposit">Annual Deposit:</label>
+      <input type="number" id="deposit" class="form-control" placeholder="Enter annual deposit" value="3000" required>
+    </div>
+
+    <button class="btn btn-primary" onclick="calculateCompoundInterest()">Calculate</button>
+
+    <h3 class="mt-4">Result:</h3>
+    <p id="result"></p>
+
+    <h3>Yearly Data:</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody id="dataTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    function calculateCompoundInterest() {
+      const principal = parseFloat(document.getElementById('principal').value);
+      const rate = parseFloat(document.getElementById('rate').value) / 100;
+      const years = parseInt(document.getElementById('years').value);
+      const deposit = parseFloat(document.getElementById('deposit').value);
+
+      let compoundInterest = 0;
+      let yearlyData = [];
+
+      for (let i = 1; i <= years; i++) {
+        compoundInterest += deposit * Math.pow((1 + rate), i - 1);
+        const balance = principal * Math.pow((1 + rate), i) + compoundInterest;
+        yearlyData.push({ year: i, balance: balance.toFixed(2) });
+      }
+
+      const totalAmount = principal + compoundInterest;
+      const numberFormat = new Intl.NumberFormat(undefined, {
+        style: 'currency',
+        currency: 'USD'
+      });
+      document.getElementById('result').innerText = `Total Amount: ${numberFormat.format(totalAmount)}`;
+
+      displayYearlyData(yearlyData, numberFormat);
+    }
+
+    function displayYearlyData(data, numberFormat) {
+      const tableBody = document.getElementById('dataTableBody');
+      tableBody.innerHTML = '';
+
+      data.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${item.year}</td><td>${numberFormat.format(item.balance)}</td>`;
+        tableBody.appendChild(row);
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfinance=self.webpackChunkfinance||[]).push([[1075],{3714:e=>{e.exports=JSON.parse('{"permalink":"/finance/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
