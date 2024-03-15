@@ -3,14 +3,13 @@ on: # run on main branch changes
   push:
     branches:
       - main
-
 jobs:
   generate:
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
       - uses: actions/checkout@v3
-      - uses: supabase/embeddings-generator@v0.0.5 # Find the latest version in the Marketplace
+      - uses: supabase/embeddings-generator@v0.0.5
         with:
           supabase-url: 'https://pacpujwwiuidzioehcgc.supabase.co'
           supabase-service-role-key: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
