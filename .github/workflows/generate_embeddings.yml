@@ -7,6 +7,7 @@ on: # run on main branch changes
 jobs:
   generate:
     runs-on: ubuntu-latest
+    environment: gh-page
     steps:
       - uses: actions/checkout@v3
       - uses: supabase/embeddings-generator@v0.0.5 # Find the latest version in the Marketplace
