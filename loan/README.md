@@ -10,5 +10,5 @@ Partners: Reprise Financial, OneMaiin Financial
 
 ### SoFi
 
-SoFi mainly focusing student loan, but also provide personal loan with rate start from 9.x% which is a pretty good rate in the market.
+[SoFi](https://www.sofi.com/invite/money?gcp=12b85f15-9dbd-4ce7-94ca-ae0ab8d80670&isAliasGcp=false) mainly focusing student loan, but also provide personal loan with rate start from 9.x% which is a pretty good rate in the market.
 
