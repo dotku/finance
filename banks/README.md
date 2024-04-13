@@ -2,7 +2,7 @@
 
 | Name | APY | Features |
 | --- | --- | --- |
-| spruce | 3.5% | tracker of your spending; setup goal of saving |
+| spruce | 3.5% | <ul><li>tracker of your spending</li><li>setup goal of saving</li></ul> |
 
 | | Platinum Plus Mastercard Bank of America |
 | --- | --- |
