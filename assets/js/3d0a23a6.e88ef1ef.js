@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfinance=self.webpackChunkfinance||[]).push([[7591],{7434:e=>{e.exports=JSON.parse('{"permalink":"/finance/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

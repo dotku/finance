@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfinance=self.webpackChunkfinance||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/finance/blog","blogTitle":"Blog"}')}}]);
