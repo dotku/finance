@@ -33,7 +33,15 @@ const config = {
     defaultLocale: "en",
     locales: ["en", "zh"],
   },
-
+  plugins: [
+    "docusaurus2-dotenv",
+    [
+      "docusaurus-plugin-dotenv",
+      {
+        systemvars: true,
+      },
+    ],
+  ],
   presets: [
     [
       "classic",
@@ -80,14 +88,19 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            type: "localeDropdown",
+            to: "/auth/signup",
+            label: "Sign up",
             position: "right",
           },
-          {
-            href: "https://github.com/dotku/finance",
-            label: "GitHub",
-            position: "right",
-          },
+          // {
+          //   type: "localeDropdown",
+          //   position: "right",
+          // },
+          // {
+          //   href: "https://github.com/dotku/finance",
+          //   label: "GitHub",
+          //   position: "right",
+          // },
         ],
       },
       footer: {
