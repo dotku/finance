@@ -5,6 +5,10 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
+import dotenv from "dotenv";
+import tailwindPlugin from "./plugins/tailwind-config/index.cjs";
+
+dotenv.config({ path: [".env.local", ".env"] });
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -34,13 +38,13 @@ const config = {
     locales: ["en", "zh"],
   },
   plugins: [
-    "docusaurus2-dotenv",
-    [
-      "docusaurus-plugin-dotenv",
-      {
-        systemvars: true,
-      },
-    ],
+    // supabaseAuthPlugin,
+    // routeDebuggerPlugin,
+    // require.resolve("./plugins/supabase-auth"),
+    // require.resolve("./plugins/route-debugger"),
+    // "docusaurus2-dotenv",
+    tailwindPlugin,
+    "./plugins/react-app-env",
   ],
   presets: [
     [
@@ -88,7 +92,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            to: "/auth/signup",
+            to: "/auth",
             label: "Sign up",
             position: "right",
           },
@@ -146,7 +150,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DinoFinance, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} JY Tech LLC.`,
       },
       prism: {
         theme: prismThemes.github,
