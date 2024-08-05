@@ -48,7 +48,7 @@ const AuthComponent = () => {
 
   if (!session) {
     return (
-      <Layout description="Description will go into a meta tag in <head />">
+      <Layout>
         <div>
           <div className="w-96 mx-auto my-8">
             <Auth
@@ -63,10 +63,13 @@ const AuthComponent = () => {
   }
 
   return (
-    <div>
-      <h1>Welcome, User!</h1>
-      <p>You are logged in.</p>
-    </div>
+    <Layout>
+      <div className="max-w-screen-xl mx-auto my-5">
+        <h1>Welcome, User!</h1>
+        <p>You are logged in.</p>
+        <pre>{JSON.stringify(session.user, null, 2)}</pre>
+      </div>
+    </Layout>
   );
 };
 
