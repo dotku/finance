@@ -12,6 +12,7 @@ jobs:
       - uses: supabase/embeddings-generator@v0.0.5
         with:
           supabase-url: 'https://pacpujwwiuidzioehcgc.supabase.co'
+          REACT_APP_SUPABASE_URL: 'https://pacpujwwiuidzioehcgc.supabase.co',
           supabase-service-role-key: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }} # use anon key
           openai-key: ${{ secrets.OPENAI_KEY }}
           docs-root-path: 'docs' # the path to the root of your md(x) files
