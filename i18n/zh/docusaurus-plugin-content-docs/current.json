@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Bank": {
+    "message": "银行",
+    "description": "The label for category Bank in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
+    "message": "Tutorial - Basics",
+    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
+    "message": "Tutorial - Extras",
+    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Crypto Currency": {
+    "message": "加密货币",
+    "description": "The label for category Crypto Currency in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Finance Management": {
+    "message": "Finance Management",
+    "description": "The label for category Finance Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Inverstment": {
+    "message": "Inverstment",
+    "description": "The label for category Inverstment in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Loan": {
+    "message": "Loan",
+    "description": "The label for category Loan in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Remittance": {
+    "message": "Remittance",
+    "description": "The label for category Remittance in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.education": {
+    "message": "education",
+    "description": "The label for category education in sidebar tutorialSidebar"
+  }
+}

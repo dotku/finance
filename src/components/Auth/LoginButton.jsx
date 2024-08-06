@@ -26,7 +26,7 @@ const LoginButton = () => {
     );
 
     return () => {
-      authListener.unsubscribe();
+      authListener.unsubscrib && authListener.unsubscribe();
     };
   }, []);
 
