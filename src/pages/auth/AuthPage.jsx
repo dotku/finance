@@ -34,7 +34,7 @@ const AuthComponent = () => {
     );
 
     return () => {
-      authListener.unsubscribe();
+      authListener.unsubscribe && authListener.unsubscribe();
     };
   }, []);
 

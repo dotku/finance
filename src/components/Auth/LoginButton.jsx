@@ -1,6 +1,7 @@
 // src/components/LoginButton.js
 import React, { useState, useEffect } from "react";
 import { supabase } from "../../supabaseClient";
+import Link from "@docusaurus/Link";
 
 const LoginButton = () => {
   const [session, setSession] = useState(null);
@@ -54,7 +55,9 @@ const LoginButton = () => {
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
-        <button onClick={handleLogin}>Login</button>
+        <Link href="/auth">
+          <button>Login</button>
+        </Link>
       )}
     </div>
   );
